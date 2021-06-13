@@ -6,8 +6,9 @@ import 'date_logic.dart';
 import 'month_grid.dart';
 
 class FullScreenDatePicker extends StatelessWidget {
-  FullScreenDatePicker({this.selectedDate});
+  FullScreenDatePicker({this.selectedDate, this.title});
 
+  final String? title;
   final titleStyle = TextStyle(fontSize: 24, fontWeight: FontWeight.w900);
   final DateTime? selectedDate;
 
@@ -30,7 +31,7 @@ class FullScreenDatePicker extends StatelessWidget {
   Widget _buildTitle() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Text('Select departure date', style: titleStyle),
+      child: Text(title ?? 'Select departure date', style: titleStyle),
     );
   }
 

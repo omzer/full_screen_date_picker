@@ -41,3 +41,7 @@ print(DateFormat('d/M/y').format(selectedDate)); // output: 13/06/2021
 
 Please note that you'll have to import the package [intl](https://pub.dev/packages/intl)
 to be able to use the format method presented in the example.
+
+## Customization:
+
+##### 1- Add Custom title (default is "Select departure date")
