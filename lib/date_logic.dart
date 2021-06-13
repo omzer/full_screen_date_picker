@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 class DatePickingLogic {
   static final Duration _oneDay = const Duration(days: 1);
 
+  /// Returns the first previous Sunday from today
   static DateTime previousSunday(DateTime time) {
     DateTime result = time;
 
@@ -13,12 +14,15 @@ class DatePickingLogic {
     return result;
   }
 
-  static DateTime firstDayOfTheMonth(int i) {
-    DateTime result = DateTime.now().add(Duration(days: 30 * i));
+  /// Returns the first day of the month, given how far this month is from today
+  static DateTime firstDayOfTheMonth(int far) {
+    DateTime result = DateTime.now().add(Duration(days: 30 * far));
     while (result.day != 1) result = result.subtract(_oneDay);
     return result;
   }
 
+  /// Return all the days of the month as DateTime list, starting from
+  /// the first previous sunday, till the last day of the month
   static List<DateTime> daysOfTheMonth(DateTime firstDay) {
     final result = <DateTime>[];
 
