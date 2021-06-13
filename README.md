@@ -14,7 +14,7 @@
 
 ##### 2- Import it: ``import 'package:full_screen_date_picker/full_screen_date_picker.dart';``
 
-##### 3- Open the page and await its result:
+##### 3- Open the page and await its result (be aware that the result might be null):
 
 ```
 DateTime selectedDate = await Navigator.push(context, MaterialPageRoute(builder: (_) => FullScreenDatePicker()));
