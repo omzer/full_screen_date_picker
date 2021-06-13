@@ -1,7 +1,6 @@
 name: full_screen_date_picker
 description: A new Flutter package project.
 version: 0.0.1
-author: Omar Sabri
 homepage: https://github.com/omzer/full_screen_date_picker
 
 environment:
