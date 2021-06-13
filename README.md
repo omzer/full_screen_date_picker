@@ -2,6 +2,12 @@
 
 #### Flutter package that allows you to pick a date using a beautiful full screen UI using one line.
 
+- 🎨 Beautiful full screen UI.
+- 👇 Infinity scrolling.
+- 🔒 Null safe.
+- 🤖 Android, 🍎 iOS, 🌐 Web, 🍏 MacOS, 🚪 Windows and 🐧 Linux.
+- 💪 Fully tested.
+
 ### Screenshots:
 
 | Picker screen   | 17th of june is highlighted |
