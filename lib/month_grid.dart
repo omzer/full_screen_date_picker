@@ -16,6 +16,7 @@ class MonthGrid extends StatelessWidget {
     fontSize: 14,
     fontWeight: FontWeight.w900,
     color: Colors.blue,
+    decoration: TextDecoration.underline,
   );
 
   @override
