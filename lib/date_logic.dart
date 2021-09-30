@@ -74,4 +74,8 @@ class DatePickingLogic {
 
     return date.day == selectedDate.day;
   }
+
+  static bool isToday(DateTime date) {
+    return isSameAsSelected(date, DateTime.now());
+  }
 }

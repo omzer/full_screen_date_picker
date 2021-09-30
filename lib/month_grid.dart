@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:full_screen_date_picker/circle_around.dart';
 import 'package:intl/intl.dart';
 
 import 'date_logic.dart';
@@ -67,15 +68,28 @@ class MonthGrid extends StatelessWidget {
       return Center(child: Text(date.day.toString(), style: previousDayStyle));
 
     // Highlight selected day
-    if (DatePickingLogic.isSameAsSelected(date, selectedDate))
-      return Center(child: Text(date.day.toString(), style: selectedDayStyle));
+    if (DatePickingLogic.isSameAsSelected(date, selectedDate)) {
+      return highlightToday(
+        Center(child: Text(date.day.toString(), style: selectedDayStyle)),
+        date,
+      );
+    }
 
     // Make other days clickable
-    return InkWell(
-      // When a date clicked
-      onTap: () => _onDateClicked(date, context),
-      child: Container(child: Center(child: Text(date.day.toString()))),
+    return highlightToday(
+      InkWell(
+        // When a date clicked
+        onTap: () => _onDateClicked(date, context),
+        child: Container(child: Center(child: Text(date.day.toString()))),
+      ),
+      date,
     );
+  }
+
+  Widget highlightToday(Widget widget, DateTime date) {
+    return DatePickingLogic.isToday(date)
+        ? CircleAround(child: widget)
+        : widget;
   }
 
   void _onDateClicked(DateTime date, context) => Navigator.pop(context, date);
