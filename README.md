@@ -12,7 +12,7 @@
 
 | Picker screen   | 17th of june is highlighted |
 | --- | --- |
-|![](https://github.com/omzer/full_screen_date_picker/blob/main/imgs/not_highlighted.png?raw=true)  | ![](https://github.com/omzer/full_screen_date_picker/blob/main/imgs/highlighted.png?raw=true)  | 
+|![](https://github.com/omzer/full_screen_date_picker/blob/main/imgs/not_highlighted.png?raw=true)  |![](https://github.com/omzer/full_screen_date_picker/blob/main/imgs/highlighted.png?raw=true)  | 
 
 ## How to use:
 
