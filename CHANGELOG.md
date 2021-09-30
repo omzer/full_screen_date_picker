@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.3] - Highlight current day
 
-* TODO: Describe initial release.
+* Added a circle around the current date to highlight it
